@@ -1,0 +1,6 @@
+releases/
+*.dll
+*.exe
+*.00*
+.DS_Store
+Thumbs.db

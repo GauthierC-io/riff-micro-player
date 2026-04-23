@@ -1,0 +1,26 @@
+NOTICE
+
+This software distribution contains multiple components with different licensing terms.
+
+Main Application
+
+The main executable (MicroPlayer.exe) is licensed under the Mozilla Public License 2.0 (MPL 2.0).
+
+You may obtain a copy of the license at:
+https://www.mozilla.org/en-US/MPL/2.0/
+
+Image Asset
+
+The file "riff.png" is © Association Riff.
+
+All rights reserved.
+
+This asset is NOT licensed under the MPL 2.0.
+No permission is granted to copy, modify, or redistribute this file except as part of this software distribution.
+
+Summary
+MicroPlayer.exe → MPL 2.0
+riff.png → All rights reserved
+
+If you have any questions regarding licensing, please contact:
+gauthier@midsommar.fr
