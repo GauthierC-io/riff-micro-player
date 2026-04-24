@@ -1,3 +1,8 @@
+---
+title: Créer un client Shoutcast/Icecast sous Clickteam Fusion 2.5
+description: Guide de création d'un client Shoutcast/Icecast sous CF2.5 avec implémentation de base de l'API (Artiste/Titre), en s'appuyant sur l'exemple de la webradio Riff.
+---
+
 # Créer un client Shoutcast/Icecast sous Clickteam Fusion 2.5
 
 ## Introduction
