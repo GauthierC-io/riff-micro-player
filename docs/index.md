@@ -7,7 +7,7 @@ description: Guide de création d'un client Shoutcast/Icecast sous CF2.5 avec im
 
 ## Introduction
 
-Ce guide vous permettra de créer un client Windows pour les technologies de streaming audio Shoutcast et Icecast, sous l'outil de développement no-code **[Clickteam Fusion 2.5](https://www.clickteam.com/fr/clickteam-fusion-2-5)** à l'aide de l'extension **DLL Object** et de la bibliothèque **BASS.dll**. L'objectif est d'apprendre à interagir avec une DLL externe sous Clickteam Fusion, en vue de créer un lecteur minimaliste pour webradio basé sur l'une et/ou l'autre technologie de streaming, identique au client **Riff Micro-Player**, [dont le code source est disponible ici](https://github.com/blablabla).
+Ce guide vous permettra de créer un client Windows pour les technologies de streaming audio Shoutcast et Icecast, sous l'outil de développement no-code **[Clickteam Fusion 2.5](https://www.clickteam.com/fr/clickteam-fusion-2-5)** à l'aide de l'extension **DLL Object** et de la bibliothèque **BASS.dll**. L'objectif est d'apprendre à interagir avec une DLL externe sous Clickteam Fusion, en vue de créer un lecteur minimaliste pour webradio basé sur l'une et/ou l'autre technologie de streaming, identique au client **Riff Micro-Player**, [dont le code source est disponible ici](https://github.com/GauthierC-io/riff-micro-player).
 
 ### Portée
 
@@ -315,7 +315,7 @@ Pensez seulement à repasser immédiatement la valeur `errorCode` à `0` à ce m
 #### Gérer les erreurs rattrapables
 
 Lorsque l'erreur indique plutôt un problème de réseau, il peut être intéressant de se donner une deuxième chance avant de couper le logiciel. Dans un souci de simplification, nous n'allons pas essayer dans ce guide de « rattraper » ce type d'erreurs. Nous allons néanmoins les traiter via des événements distincts. Cela vous permettra ensuite, si vous le désirez, d'implémenter un système de récupération sans avoir à repenser toute la logique.
-Le [code source commenté](https://github.com/blabla) propose une implémentation possible d'un tel système.
+Le [code source commenté](https://github.com/GauthierC-io/riff-micro-player) propose une implémentation possible d'un tel système.
 
 En premier lieu, nous allons vérifier régulièrement l'état de la connexion au serveur. Pour ce faire, créez un événement `Toutes les 5 secondes` + `initComplete = 1` avec les actions suivantes :
 
@@ -387,4 +387,4 @@ Voici quelques fonctionnalités supplémentaires simples que vous pourriez appor
 - Tenter une reconnexion au flux quand l'erreur détectée est liée à un problème réseau ou côté serveur
 - En cas de reconnexion du flux, reprendre ou non la lecture selon que l'utilisateur était en train d'écouter ou non
 
-Au besoin, pour apprendre à ajouter ces fonctionnalités, reportez-vous au [code source commenté](https://github.com/blabla) de l'application de démonstration **Riff Micro-Player**. Le tout tient en seulement 21 événements.
+Au besoin, pour apprendre à ajouter ces fonctionnalités, reportez-vous au [code source commenté](https://github.com/GauthierC-io/riff-micro-player) de l'application de démonstration **Riff Micro-Player**. Le tout tient en seulement 21 événements.
